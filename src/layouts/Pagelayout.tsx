@@ -4,15 +4,15 @@ import Menu from "../components/Menu";
 
 const Pagelayout = () => {
     return (
-        <div>
+        <div className="h-screen bg-azul-total/10 overflow-auto flex">
             <Menu />
-            <div>
+            <div className="flex-1">
                 <Header />
-                <Outlet />
-
+                <div className="p-10">
+                    <Outlet />
+                </div>
             </div>
         </div>
-
     );
 }
 
